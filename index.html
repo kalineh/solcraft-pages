@@ -169,7 +169,7 @@
       } catch (error) {
         rawHash = "";
       }
-      var match = rawHash.match(/solspire:[A-Za-z0-9_-]{39}/i);
+      var match = rawHash.match(/solspire:[A-Za-z0-9_-]{14,179}/i);
       var joinCode = match ? match[0] : "";
       var codeElement = document.getElementById("code");
       var copyButton = document.getElementById("copy");
